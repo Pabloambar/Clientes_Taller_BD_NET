@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TALLER_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DatosClientes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dirección" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroDeTelefono" Type="Int64" />
+    <Property Name="Vehículo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Patente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroChasis" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Kilómetros" Type="Int64" />
+    <Property Name="FechaDeMantenimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaProximoMant" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="TALLER_DBEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DatosClientes" EntityType="Self.DatosClientes" />
+  </EntityContainer>
+</Schema>

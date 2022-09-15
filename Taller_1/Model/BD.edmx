@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TALLER_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DatosClientes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Apellido" Type="varchar" MaxLength="50" />
+          <Property Name="Dirección" Type="varchar" MaxLength="50" />
+          <Property Name="NumeroDeTelefono" Type="bigint" />
+          <Property Name="Vehículo" Type="varchar" MaxLength="50" />
+          <Property Name="Patente" Type="varchar" MaxLength="50" />
+          <Property Name="NumeroChasis" Type="varchar" MaxLength="50" />
+          <Property Name="Kilómetros" Type="bigint" />
+          <Property Name="FechaDeMantenimiento" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaProximoMant" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Descripción" Type="varchar(max)" />
+        </EntityType>
+        <EntityContainer Name="TALLER_DBModelStoreContainer">
+          <EntitySet Name="DatosClientes" EntityType="Self.DatosClientes" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TALLER_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DatosClientes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dirección" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NumeroDeTelefono" Type="Int64" />
+          <Property Name="Vehículo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Patente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NumeroChasis" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Kilómetros" Type="Int64" />
+          <Property Name="FechaDeMantenimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaProximoMant" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Descripción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="TALLER_DBEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DatosClientes" EntityType="Self.DatosClientes" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TALLER_DBModelStoreContainer" CdmEntityContainer="TALLER_DBEntities2">
+          <EntitySetMapping Name="DatosClientes">
+            <EntityTypeMapping TypeName="TALLER_DBModel.DatosClientes">
+              <MappingFragment StoreEntitySet="DatosClientes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+                <ScalarProperty Name="NumeroDeTelefono" ColumnName="NumeroDeTelefono" />
+                <ScalarProperty Name="Vehículo" ColumnName="Vehículo" />
+                <ScalarProperty Name="Patente" ColumnName="Patente" />
+                <ScalarProperty Name="NumeroChasis" ColumnName="NumeroChasis" />
+                <ScalarProperty Name="Kilómetros" ColumnName="Kilómetros" />
+                <ScalarProperty Name="FechaDeMantenimiento" ColumnName="FechaDeMantenimiento" />
+                <ScalarProperty Name="FechaProximoMant" ColumnName="FechaProximoMant" />
+                <ScalarProperty Name="Descripción" ColumnName="Descripción" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

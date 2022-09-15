@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TALLER_DBModelStoreContainer" CdmEntityContainer="TALLER_DBEntities2">
+    <EntitySetMapping Name="DatosClientes">
+      <EntityTypeMapping TypeName="TALLER_DBModel.DatosClientes">
+        <MappingFragment StoreEntitySet="DatosClientes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+          <ScalarProperty Name="NumeroDeTelefono" ColumnName="NumeroDeTelefono" />
+          <ScalarProperty Name="Vehículo" ColumnName="Vehículo" />
+          <ScalarProperty Name="Patente" ColumnName="Patente" />
+          <ScalarProperty Name="NumeroChasis" ColumnName="NumeroChasis" />
+          <ScalarProperty Name="Kilómetros" ColumnName="Kilómetros" />
+          <ScalarProperty Name="FechaDeMantenimiento" ColumnName="FechaDeMantenimiento" />
+          <ScalarProperty Name="FechaProximoMant" ColumnName="FechaProximoMant" />
+          <ScalarProperty Name="Descripción" ColumnName="Descripción" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

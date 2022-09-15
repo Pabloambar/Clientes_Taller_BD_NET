@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A88E5878-422C-4F01-AB3A-4461AC4B67C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Taller_1</RootNamespace>
+    <AssemblyName>Taller_1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchivos.Designer.cs">
+      <DependentUpon>frmArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheck.Designer.cs">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosUsuario.Designer.cs">
+      <DependentUpon>frmDatosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGaleriaFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGaleriaFotos.Designer.cs">
+      <DependentUpon>frmGaleriaFotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaTurnos.Designer.cs">
+      <DependentUpon>frmListaTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManuales.Designer.cs">
+      <DependentUpon>frmManuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPRUEBADGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPRUEBADGV.Designer.cs">
+      <DependentUpon>frmPRUEBADGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTurnos.Designer.cs">
+      <DependentUpon>frmTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVer.Designer.cs">
+      <DependentUpon>frmVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArchivos.cs" />
+    <Compile Include="ListaClientes.cs" />
+    <Compile Include="ListaConexionArchivos.cs" />
+    <Compile Include="ListaConexiones.cs" />
+    <Compile Include="ListaConexiones1.cs" />
+    <Compile Include="ListaConexionesDatos.cs" />
+    <Compile Include="ListaConexionGaleria.cs" />
+    <Compile Include="ListaConexionManuales.cs" />
+    <Compile Include="ListaDatos.cs" />
+    <Compile Include="ListaGaleria.cs" />
+    <Compile Include="ListaManuales.cs" />
+    <Compile Include="ListaTurnos.cs" />
+    <Compile Include="Model\BD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DatosClientes.cs">
+      <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ViewModel\ClientesViewModel.cs" />
+    <Compile Include="Presentation\frmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmNuevo.Designer.cs">
+      <DependentUpon>frmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TALLER_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TALLER_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheck.resx">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosUsuario.resx">
+      <DependentUpon>frmDatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGaleriaFotos.resx">
+      <DependentUpon>frmGaleriaFotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaTurnos.resx">
+      <DependentUpon>frmListaTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPRUEBADGV.resx">
+      <DependentUpon>frmPRUEBADGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTurnos.resx">
+      <DependentUpon>frmTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVer.resx">
+      <DependentUpon>frmVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmNuevo.resx">
+      <DependentUpon>frmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Model\BD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\BD.edmx.diagram">
+      <DependentUpon>BD.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TALLER_DBDataSet.xsc">
+      <DependentUpon>TALLER_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TALLER_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TALLER_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TALLER_DBDataSet.xss">
+      <DependentUpon>TALLER_DBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga - copia - copia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29 - copia - copia - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mopar-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40-402887_fiat-logo-wallpaper-37456-38315-hd-wallpapers-fiat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LINEA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineaCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LINEANUEVO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\BD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD.edmx</DependentUpon>
+      <LastGenOutput>BD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\BD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD.edmx</DependentUpon>
+      <LastGenOutput>BD.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
